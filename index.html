@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="nav-bar">
+            <ul>
+                <li><a class="btn active" href="#">Home</a></li>
+                <li><a class="btn " href="#second-page">Menu</a></li>
+                <li><a class="btn " href="#location">Location</a></li>
+                <li><a class="btn " href="tel: #09453313767">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="text-background">
+            <h1 id="borgeran">BORGERAN</h1>
+            <h1 id="dot">DOT</h1>
+            <h1 id="come">COME</h1>
+        </div>
+    <div class="home-page">
+        <img id="firstB" src="img/Floating-burger-transparent-background-PNG-removebg-preview.png" alt="Floating Burger">
+    
+        <div id="soc-med">
+            <div class="socmed fb"><a href="https://facebook.com"><img src="img/facebook.png" alt="facebook"></a></div>
+            <div class="socmed ig"><a href="https://instagram.com"><img src="img/instagram.png" alt="instagram"></a></div>
+            <div class="socmed twitter"><a href="https://twitter.com"><img src="img/twitter.png" alt="twitter"></a></div>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="disc">
+            <h3>Classic Burger</h3>
+            <p><span style="color:brown"> Juicy, big, loaded with toppings of my choice</span>, High qualtiy beef medium to well with cheese and bacon on multigrain bun, A huge single or triple burgernwith all the ficings, cheese, lettuce, tomato, onions and special sauce or mayonnaise </p>
+        </div>
+        <img src="/img/Floating-burger-PNG (1).png" alt="floating burger" width="200">
+    </div>
+    <div id="second-page">
+        <h1>MENU</h1>
+            <div id="list-burger">
+            <div class="borger">
+                <img src="/img/Delicious-hamburger-png-removebg-preview.png" alt="borger ka sakin">
+                <div class="footer-borger">
+                    <p>Burger 1</p>
+                    <p>$1.00</p>
+                </div>
+            </div>
+            <div class="borger">
+                <img src="/img/Delicious-hamburger-png-removebg-preview.png" alt="borger ka sakin">
+                <div class="footer-borger">
+                    <p>Burger 2</p>
+                    <p>$1.00</p>
+                </div>
+            </div>
+            <div class="borger">
+                <img src="/img/Delicious-hamburger-png-removebg-preview.png" alt="borger ka sakin">
+                <div class="footer-borger">
+                    <p>Burger 3</p>
+                    <p>$1.00</p>
+                </div>
+            </div>
+            <div class="borger last">
+                <img src="/img/Delicious-hamburger-png-removebg-preview.png" alt="borger ka sakin">
+                <div class="footer-borger">
+                    <p>Burger 4</p>
+                    <p>$1.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="#"><input type="submit" value="Place Order" id="place_order"></a>
+            <a href="/soon.html"><input type="submit" value="See more" id="place_order"></a>
+        </div>
+    </div>
+    <div id="location">
+        <h1>Visit us here</h1>
+        <img id="house" src="img/location2.jpg" alt="house">
+        <img id="loc" src="img/location.jpg" alt="basag ligao city">
+        <div class="location-disc">
+            <h4>P2 Basag Ligao City</h4>
+            <h4>7JC2+847 Ligao, Albay</h4>
+        </div>
+        <img id="home-burger" src="/img/set-homemade-delicious-burgers-_2_-removebg-preview.png" alt="burger">
+    </div>
+    <div id="follow">
+        <h3>Follow us on: </h3>
+        <div class="platform">
+            <h3>Facebook</h3>
+            <h3>Instagram</h3>
+            <h3>Twitter</h3>
+        </div>
+    </div>
+    <footer>
+        <p> Developer : Angelo Loreno BSCpE 2A</p>
+        <p> Date Created : February 15 2023</p>
+    </footer>
+</body>
+<script>
+    let btnContainer = document.getElementsByClassName("nav-bar")
+    let btns = document.getElementsByClassName('btn')
+
+    for(let i = 0; i < btns.length; i++){
+        btns[i].addEventListener('click', function(){
+            let current = document.getElementsByClassName('active')
+            current[0].className = current[0].className.replace("active")
+            this.className += " active"
+        })
+    }
+
+</script>
+</html>
